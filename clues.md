@@ -6,6 +6,7 @@ function submitClue(){
     var clueform = document.getElementById('clueform');
 
     clueform.action = action_src;
+    clueform.removeChild(clue[0]);
 }
 </script>
 
