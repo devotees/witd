@@ -1,8 +1,10 @@
 # Clues Page
 <script>
 function submitClue(){
-    var action_src = "/" + document.getElementsByName("clue")[0].value;
+    var clue = document.getElementsByName("clue");
+    var action_src = "/" + clue[0].value;
     var clueform = document.getElementById('clueform');
+
     clueform.action = action_src;
 }
 </script>
